@@ -3,17 +3,19 @@ import DetailView from '@/components/DetailView.vue'
 import SGHeader from '@/components/SGHeader.vue'
 import SGText from '@/components/SGText.vue'
 import SGGallery from '@/components/SGGallery.vue'
-import { flinders } from './flindersHike'
 import SGMapFollow from '@/components/SGMapFollow.vue'
 import SGMapCutout from '@/components/SGMapCutout.vue'
 import type { Feature, LineString } from 'geojson'
 import SGMapOrbit from '@/components/SGMapOrbit.vue'
 import SGDayBreak from '@/components/SGDayBreak.vue'
+import { useTripDetails } from '@/functions/loaders'
 
-const dayOneGeom = flinders.geography.detail?.features[0] as Feature<LineString>
-const dayTwoGeom = flinders.geography.detail?.features[1] as Feature<LineString>
-const dayThreeGeom = flinders.geography.detail?.features[2] as Feature<LineString>
-const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString>
+const { data: flinders } = useTripDetails()
+
+const dayOneGeom = flinders.value?.features[0] as Feature<LineString>
+const dayTwoGeom = flinders.value?.features[1] as Feature<LineString>
+const dayThreeGeom = flinders.value?.features[2] as Feature<LineString>
+const dayFourGeom = flinders.value?.features[3] as Feature<LineString>
 </script>
 
 <template>
@@ -30,7 +32,7 @@ const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString
       have four days hiking through some classic Flinders terrain around St Mary's peak, with a
       shorter option for those who were less excited about four solid days of walking.
     </SGText>
-    <SGMapCutout :fit-bounds-geometry="flinders.geography.detail" :pitch="0" :reveal="'all'" />
+    <SGMapCutout :fit-bounds-geometry="flinders" :pitch="0" :reveal="'all'" />
     <SGText>
       The route we ended up with meant a little bit of doubling back towards the end in order to get
       to a pickup location. Mum and Rick volunteered to be our support car, but wouldn't be there
@@ -79,6 +81,7 @@ const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString
       :show-time="true"
       :follow-pitch="70"
       :overview="true"
+      :satellite="true"
     />
     <SGGallery
       :list="[
@@ -162,7 +165,7 @@ const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString
       the more sensible hikers would stay, while the silly ones continued on to camp at Wilcolo
       Campsite.
     </SGText>
-    <SGMapCutout :fit-bounds-geometry="flinders.geography.detail?.features[1]" />
+    <SGMapCutout :fit-bounds-geometry="flinders?.features[1]" />
     <SGText>
       <br />
       <br />
@@ -205,6 +208,7 @@ const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString
       :overview="false"
       :use-time="false"
       :show-time="true"
+      :satellite="true"
     />
     <SGGallery
       :list="[
@@ -218,7 +222,19 @@ const dayFourGeom = flinders.geography.detail?.features[3] as Feature<LineString
     <SGDayBreak />
 
     <SGText> We woke to the most beautiful morning light on the side of the range. </SGText>
-    <SGMapFollow :geometry="dayThreeGeom" :follow="false" :overview="true" :use-time="true" />
-    <SGMapFollow :geometry="dayFourGeom" :follow="true" :overview="true" :use-time="false" />
+    <SGMapFollow
+      :geometry="dayThreeGeom"
+      :follow="false"
+      :overview="true"
+      :use-time="true"
+      :satellite="true"
+    />
+    <SGMapFollow
+      :geometry="dayFourGeom"
+      :follow="true"
+      :overview="true"
+      :use-time="false"
+      :satellite="true"
+    />
   </DetailView>
 </template>
