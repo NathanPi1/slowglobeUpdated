@@ -1,7 +1,7 @@
-import type { Trip } from '~/allTrips'
+import type { Trip } from '@/functions/trips'
 import imgUrl from './images/PXL_20241115_195041561.jpg?w=600&gallery'
-import LAGeo from './los_angeles.json'
-import type { FeatureCollection } from 'geojson'
+import overviewGeo from './geometry.geojson?simplify'
+import detailGeo from './geometry.geojson'
 
 export const los_angeles: Trip = {
   id: 'los_angeles',
@@ -12,8 +12,9 @@ export const los_angeles: Trip = {
   geography: {
     overview: {
       center: [138.536236, -34.940122],
-      zoom: 6
+      zoom: 6,
+      tracks: overviewGeo
     },
-    detail: LAGeo as FeatureCollection
+    detail: detailGeo
   }
 }
