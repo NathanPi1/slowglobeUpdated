@@ -5,34 +5,7 @@ import { texas } from '~/texas/texas'
 import { melbourne } from './melbourne/melbourne'
 import { upstate_new_york } from './upstate_new_york/upstate_new_york'
 import { london } from './london/london'
-
-export interface Trip {
-  id: string
-  name: string
-  headerImage: string
-  date: string
-  locationText: string
-  geography: { overview: TripGeographyOverview; detail?: GeoJSON.FeatureCollection }
-}
-
-export interface TripGeographyOverview {
-  center: [number, number]
-  zoom: number
-}
-
-export function getTripById(id: string) {
-  return allTrips.find((trip) => trip.id === id)
-}
-
-export function getTripHeaderInfoById(id: string) {
-  const trip = getTripById(id)
-  if (!trip) {
-    return { locationText: '', date: '', headerImage: '' }
-  }
-
-  const { locationText, date, headerImage } = trip
-  return { locationText, date, headerImage }
-}
+import type { Trip } from '@/functions/trips'
 
 export const allTrips: Trip[] = [
   upstate_new_york,

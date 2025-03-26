@@ -1,4 +1,4 @@
-import type { Trip } from '~/allTrips'
+import type { Trip } from '@/functions/trips'
 import imgUrl from './images/20240712_141222-2.jpg?w=600&gallery'
 import flindersGeo from './flindersHike.json'
 
