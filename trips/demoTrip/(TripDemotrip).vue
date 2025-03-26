@@ -100,6 +100,7 @@ const everestHike = geom.value?.features[2] as Feature<LineString>
       :overview="false"
       :satellite="true"
       :follow-zoom="13"
+      :no-pre-scroll="true"
     />
     <SGText>
       <p>
