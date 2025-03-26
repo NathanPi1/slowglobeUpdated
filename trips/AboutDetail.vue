@@ -1,37 +1,41 @@
 <template>
-  <div class="attribution">
-    <PostageStamp :image="headshotImage"></PostageStamp>
-    <br />
-    <br />
-    <div>
-      The Adventures of
-      <div class="name">Insert Name Here</div>
+  <div class="attributionContainer">
+    <div class="attribution">
+      <PostageStamp image="\images\IMG_0067.JPG"></PostageStamp>
+      <br /><br />
+      <div>
+        An account of exploration by
+        <br /><br />
+        <div class="name">Nathan Wuttke</div>
+      </div>
+      <br /><br />
+      Text and photos on this site by me.
+      <br /><br />
+      Why ADVENTRICS? That was thanks to Chat-GPT...
+      <br />
+      <p>
+        <b>ADV</b>enture, <b>E</b>xciting, <b>N</b>athan, <b>TR</b>avel, <b>I</b>nspiring,
+        <b>C</b>hallenges, <b>S</b>cenery. <br />
+      </p>
+      The code has been written by my good friend Daniel Birch-Smith unless otherwise noted.
+      <br /><br />
+      <div>
+        Map by&nbsp;
+        <a
+          class="mapboxgl-ctrl-logo"
+          style="display: inline-block; vertical-align: -0.125em"
+          target="_blank"
+          rel="noopener nofollow"
+          href="https://www.mapbox.com/"
+          aria-label="Mapbox homepage"
+        ></a
+        >, style is based on Standard, with some modifications to reduce clutter. Forgive my
+        cartography skills, mapmaking is hard.
+      </div>
+      <br />
+      Daniel wrote this in programming languages including Vue, Vite, Typescript, using the Mapbox,
+      VueUse, PhotoSwipe and vite-imagetools libraries.
     </div>
-    <br />
-    <br />
-    SlowGlobe is a travel blogging tool, find out more at
-    <a href="https://github.com/dlbs0/slowglobeTemplate" target="_blank"
-      >github.com/dlbs0/slowglobeTemplate</a
-    >
-    <br />
-    <br />
-    You can customise this page in the <em>trips/AboutDetail.vue</em> file.
-    <br />
-    <br />
-    <div>
-      Map by&nbsp;
-      <a
-        class="mapboxgl-ctrl-logo"
-        style="display: inline-block; vertical-align: -0.125em"
-        target="_blank"
-        rel="noopener nofollow"
-        href="https://www.mapbox.com/"
-        aria-label="Mapbox homepage"
-      ></a>
-    </div>
-    <br />
-    Written with Vue, Vite, Typescript, using the Mapbox, Turf, VueUse, LightGallery and
-    vite-imagetools libraries.
   </div>
 </template>
 
@@ -62,5 +66,4 @@
 </style>
 <script setup lang="ts">
 import PostageStamp from '@/components/PostageStamp.vue'
-import headshotImage from './Portrait_Placeholder_Square.png'
 </script>
