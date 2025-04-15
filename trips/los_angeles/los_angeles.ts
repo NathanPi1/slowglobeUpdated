@@ -1,5 +1,5 @@
 import type { Trip } from '@/functions/trips'
-import imgUrl from './images/PXL_20241115_195041561.jpg?w=600&gallery'
+import imgUrl from './images/square.jpg?w=600&gallery'
 import overviewGeo from './geometry.geojson?simplify'
 import detailGeo from './geometry.geojson'
 

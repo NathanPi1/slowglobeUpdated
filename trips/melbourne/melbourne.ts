@@ -1,16 +1,20 @@
 import type { Trip } from '@/functions/trips'
-import imgUrl from '@/assets/images/other/20240922_172726-2.jpg?w=600&gallery'
+import imgUrl from './images/square.jpg?w=600&gallery'
+import overviewGeo from './geometry.geojson?simplify'
+import detailGeo from './geometry.geojson'
 
 export const melbourne: Trip = {
   id: 'melbourne',
   name: 'Melbourne for a Visa',
   headerImage: imgUrl,
-  date: '2024-09-22',
-  locationText: 'Bräcke, Sweden',
+  date: '2025-01-02',
+  locationText: 'U.S. Consulate, Melbourne',
   geography: {
     overview: {
-      center: [15.4185552491721, 62.750063825451555],
-      zoom: 7
-    }
+      center: [144.98004665492755, -37.84688846387312],
+      zoom: 15,
+      tracks: overviewGeo
+    },
+    detail: detailGeo
   }
 }

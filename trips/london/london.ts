@@ -1,16 +1,20 @@
 import type { Trip } from '@/functions/trips'
-import imgUrl from '@/assets/images/other/20240922_172726-2.jpg?w=600&gallery'
+import imgUrl from './images/IMG_6292_square.JPG?w=600&gallery'
+import overviewGeo from './geometry.geojson?simplify'
+import detailGeo from './geometry.geojson'
 
 export const london: Trip = {
   id: 'london',
-  name: 'Exploring London and Bath',
+  name: 'Taking a Bath in London',
   headerImage: imgUrl,
-  date: '2024-09-22',
-  locationText: 'Bräcke, Sweden',
+  date: '2025-02-28',
+  locationText: 'London, UK',
   geography: {
     overview: {
-      center: [15.4185552491721, 62.750063825451555],
-      zoom: 7
-    }
+      center: [-0.107991, 51.512546],
+      zoom: 7,
+      tracks: overviewGeo
+    },
+    detail: detailGeo
   }
 }

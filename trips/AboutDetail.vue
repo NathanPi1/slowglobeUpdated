@@ -1,7 +1,7 @@
 <template>
   <div class="attributionContainer">
     <div class="attribution">
-      <PostageStamp image="\images\IMG_0067.JPG"></PostageStamp>
+      <PostageStamp :image="headshot"></PostageStamp>
       <br /><br />
       <div>
         An account of exploration by
@@ -29,7 +29,7 @@
           href="https://www.mapbox.com/"
           aria-label="Mapbox homepage"
         ></a
-        >, style is based on Standard, with some modifications to reduce clutter. Forgive my
+        >, style is based on Standard, with some modifications to reduce clutter. Forgive our
         cartography skills, mapmaking is hard.
       </div>
       <br />
@@ -66,4 +66,5 @@
 </style>
 <script setup lang="ts">
 import PostageStamp from '@/components/PostageStamp.vue'
+import headshot from './IMG_0067.JPG'
 </script>

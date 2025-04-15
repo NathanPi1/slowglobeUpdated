@@ -1,5 +1,5 @@
 import type { Trip } from '@/functions/trips'
-import imgUrl from '@/assets/images/other/20240922_172726-2.jpg?w=600&gallery'
+import imgUrl from './images/square.jpg?w=600&gallery'
 
 export const upstate_new_york: Trip = {
   id: 'upstate_new_york',
