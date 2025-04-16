@@ -66,5 +66,5 @@
 </style>
 <script setup lang="ts">
 import PostageStamp from '@/components/PostageStamp.vue'
-import headshot from './IMG_0067.JPG'
+import headshot from './IMG_0067.jpg'
 </script>
