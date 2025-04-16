@@ -63,8 +63,8 @@ const { data: geom } = useTripDetails()
         Upon arriving at Chantelle’s abode in Bath I was quickly introduced to the rest of Cosi’s
         family as they arrived home. Chantelle was on dinner prep cooking up a delicious chicken
         stir-fry. After Cosi was tucked in Chantelle and I hung out together watching the classic
-        Jojo Rabbit, I had forgotten how good this film is, throwing an interesting perspective on
-        Hitler Youth times back in WW2.
+        <em>Jojo Rabbit</em>, I had forgotten how good this film is, throwing an interesting
+        perspective on Hitler Youth times back in WW2.
       </p>
     </SGText>
     <SGGallery :list="['IMG_6254.jpg', 'IMG_6258.jpg']" />
@@ -128,10 +128,10 @@ const { data: geom } = useTripDetails()
         underground, enjoying a saved cinnamon scroll from the pastry shop, on our way to Charing
         Cross station. From here we attempted to get some cheaper last-minute tickets. But being a
         Saturday night everyone else had the same thought. We turned to looking online and found
-        cheap tickets for Back to the Future, with Chantelle not having seen the film and me not
-        having been to a musical we decided this would be a great first for both of us! With this
-        booked we freshened up at our accommodation and headed to the Strand for a delicious dinner
-        of dumplings and fried rice.
+        cheap tickets for <em>Back to the Future</em>, with Chantelle not having seen the film and
+        me not having been to a musical we decided this would be a great first for both of us! With
+        this booked we freshened up at our accommodation and headed to the Strand for a delicious
+        dinner of dumplings and fried rice.
       </p>
       <p>
         We headed into the venue grabbing a drink, me a beer and Chantelle a cocktail inspired by
