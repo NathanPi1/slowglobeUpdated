@@ -7,11 +7,11 @@ export const detroit: Trip = {
   id: 'detroit',
   name: 'Take Him to Detroit',
   headerImage: imgUrl,
-  date: '2024-09-22',
-  locationText: 'Bräcke, Sweden',
+  date: '2025-01-10',
+  locationText: 'Detroit, Michigan, USA',
   geography: {
     overview: {
-      center: [15.4185552491721, 62.750063825451555],
+      center: [-83.328764, 42.237697],
       zoom: 7,
       tracks: overviewGeo
     },
