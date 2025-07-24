@@ -1,5 +1,7 @@
 import type { Trip } from '@/functions/trips'
 import imgUrl from './images/PXL_20250227_212707341.jpg?w=600&gallery'
+import overviewGeo from './geometry.geojson?simplify'
+import detailGeo from './geometry.geojson'
 
 export const golden_day_in_sweden: Trip = {
   id: 'golden_day_in_sweden',
@@ -10,7 +12,9 @@ export const golden_day_in_sweden: Trip = {
   geography: {
     overview: {
       center: [17.2638639906221, 62.406413433909364],
-      zoom: 6
-    }
+      zoom: 6,
+      tracks: overviewGeo
+    },
+    detail: detailGeo
   }
 }

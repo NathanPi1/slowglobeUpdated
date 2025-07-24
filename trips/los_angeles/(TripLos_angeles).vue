@@ -46,21 +46,23 @@ import SGText from '@/components/SGText.vue'
       :add-photos-to-map="true"
     />
     <SGText>
-      Then, unexpectedly, Cam and I were also pulled into immigration. What started as a routine
-      entry into the U.S. turned into a prolonged ordeal. We were led through a series of security
-      measures—belts removed, full pat-downs, a thorough count of any Australian cash we carried.
-      Soon, we found ourselves in a holding room with another traveller from Germany, who had
-      already been stuck there for 24 hours. The space was sparse, with little to do but eat an
-      excessive number of Cheetos and sweet pretzels while watching Family Guy reruns on a nearby
-      television.
-      <br />
-      <br />
-      After five hours of waiting, we were finally called in for formal interviews. Two hours later,
-      we received the news we had been dreading—we were being denied entry and would be sent home.
-      With only a single message allowed to be sent to my dad, the reality of the situation sank in.
-      The waiting continued for several more hours before we were escorted onto a flight back to
-      Melbourne. The three of us ended up in our own rows on the plane but as an added precaution, a
-      flight attendant held onto our passports throughout the journey.
+      <p>
+        Then, unexpectedly, Cam and I were also pulled into immigration. What started as a routine
+        entry into the U.S. turned into a prolonged ordeal. We were led through a series of security
+        measures—belts removed, full pat-downs, a thorough count of any Australian cash we carried.
+        Soon, we found ourselves in a holding room with another traveller from Germany, who had
+        already been stuck there for 24 hours. The space was sparse, with little to do but eat an
+        excessive number of Cheetos and sweet pretzels while watching Family Guy reruns on a nearby
+        television.
+      </p>
+      <p>
+        After five hours of waiting, we were finally called in for formal interviews. Two hours
+        later, we received the news we had been dreading—we were being denied entry and would be
+        sent home. With only a single message allowed to be sent to my dad, the reality of the
+        situation sank in. The waiting continued for several more hours before we were escorted onto
+        a flight back to Melbourne. The three of us ended up in our own rows on the plane but as an
+        added precaution, a flight attendant held onto our passports throughout the journey.
+      </p>
     </SGText>
     <SGGallery
       :list="[
