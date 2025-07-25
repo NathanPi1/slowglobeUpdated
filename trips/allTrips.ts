@@ -13,10 +13,10 @@ import { detroit } from './detroit/detroit'
 export const allTrips: Trip[] = [
   // minneapolis,
   // tupelo,
-  // upstate_new_york,
+  upstate_new_york,
   london,
-  // golden_day_in_sweden,
-  // texas,
+  golden_day_in_sweden,
+  texas,
   detroit,
   melbourne,
   los_angeles,
