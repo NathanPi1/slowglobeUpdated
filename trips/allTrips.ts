@@ -7,12 +7,12 @@ import { upstate_new_york } from './upstate_new_york/upstate_new_york'
 import { london } from './london/london'
 import type { Trip } from '@/functions/trips'
 import { detroit } from './detroit/detroit'
-// import { tupelo } from './tupelo/tupelo'
+import { tupelo } from './tupelo/tupelo'
 // import { minneapolis } from './minneapolis/minneapolis'
 
 export const allTrips: Trip[] = [
   // minneapolis,
-  // tupelo,
+  tupelo,
   upstate_new_york,
   london,
   golden_day_in_sweden,
