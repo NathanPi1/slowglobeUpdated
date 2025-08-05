@@ -8,10 +8,10 @@ import { london } from './london/london'
 import type { Trip } from '@/functions/trips'
 import { detroit } from './detroit/detroit'
 import { tupelo } from './tupelo/tupelo'
-// import { minneapolis } from './minneapolis/minneapolis'
+import { minneapolis } from './minneapolis/minneapolis'
 
 export const allTrips: Trip[] = [
-  // minneapolis,
+  minneapolis,
   tupelo,
   upstate_new_york,
   london,
