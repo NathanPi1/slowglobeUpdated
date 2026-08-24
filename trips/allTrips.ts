@@ -9,8 +9,10 @@ import type { Trip } from '@/functions/trips'
 import { detroit } from './detroit/detroit'
 import { tupelo } from './tupelo/tupelo'
 import { minneapolis } from './minneapolis/minneapolis'
+import { chicago } from './chicago/chicago'
 
 export const allTrips: Trip[] = [
+  chicago,
   minneapolis,
   tupelo,
   upstate_new_york,
